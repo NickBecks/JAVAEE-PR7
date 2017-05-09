@@ -1,0 +1,12 @@
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="1.0">
+    <persistence-unit name="myUnit" transaction-type="RESOURCE_LOCAL">
+        <class>ua.beloff.data.Lecture</class>
+        <class>ua.beloff.data.Student</class>
+        <class>ua.beloff.data.Teacher</class>
+        <properties>
+            <property name="javax.persistence.schema-generation.database.action" value="create-drop"/>
+            <property name="javax.persistence.schema-generation.scripts.action" value="create-drop"/>
+            <property name="hibernate.hbm2ddl.auto" value="create-drop" />
+        </properties>
+    </persistence-unit>
+</persistence>
